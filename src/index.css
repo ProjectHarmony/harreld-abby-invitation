@@ -1,0 +1,43 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Root styles */
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+*:focus {
+  outline: none;
+}
+
+/* Center content */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Media query for mobile view */
+@media (max-width: 767px) {
+  /* Reset container styles */
+  .container {
+    display: block;
+    margin: 0 auto; /* Center content */
+    max-width: 100%; /* Ensure content doesn't extend lengthily */
+    padding: 0 1rem; /* Optional: Add padding to content for better readability */
+  }
+}
+
+.font-protest-riot {
+  font-family: 'Protest Riot', sans-serif;
+}
