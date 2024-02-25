@@ -16,10 +16,11 @@ function App() {
       backgroundPosition: 'center', backgroundRepeat: 'no-repeat', 
     }}>
   
-      <Header />
-      <div className="-mt-20">
-        <Couple />
-      </div>
+  <div className="mt-4 flex justify-between">
+      <Couple />
+      <Couple />
+      <Couple />
+    </div>
       <div>
         <TimeCountdown />
       </div>

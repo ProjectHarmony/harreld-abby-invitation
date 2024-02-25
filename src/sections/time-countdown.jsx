@@ -2,7 +2,7 @@ import React from 'react';
 import FlipCountdown from "@rumess/react-flip-countdown";
 
 const TimeCountdown = () => {
-  const targetDate = new Date('May 17, 2024 00:00:00').toISOString();
+  const targetDate = new Date('August 24, 2024 00:00:00').toISOString();
   const currentDate = new Date();
 
   // Calculate the difference in milliseconds between the target date and the current date
@@ -13,7 +13,7 @@ const TimeCountdown = () => {
   return (
     <div className="text-[#ffffff] mt-10">
       <p className='text-center mb-5 northwave text-5xl'>
-        see you soon!
+        Harreld & Abegail
       </p>
       <FlipCountdown
         hideYear
