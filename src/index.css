@@ -3,7 +3,6 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Root styles */
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
@@ -20,24 +19,31 @@
   outline: none;
 }
 
-/* Center content */
 .container {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-/* Media query for mobile view */
+
 @media (max-width: 767px) {
-  /* Reset container styles */
   .container {
     display: block;
-    margin: 0 auto; /* Center content */
-    max-width: 100%; /* Ensure content doesn't extend lengthily */
-    padding: 0 1rem; /* Optional: Add padding to content for better readability */
+    margin: 0 auto;
+    max-width: 100%;
+    padding: 0 1rem; 
   }
 }
 
 .font-protest-riot {
   font-family: 'Protest Riot', sans-serif;
+}
+
+@font-face {
+  font-family: northwave;
+  src: url(/North_Wave.otf);
+}
+
+.northwave {
+  font-family: northwave;
 }

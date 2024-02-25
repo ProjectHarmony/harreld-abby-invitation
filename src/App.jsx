@@ -10,9 +10,14 @@ function App() {
 
 
   return (
-    <div className="flex flex-col items-center relative min-h-screen overflow-auto" style={{ backgroundImage: 'url("/bg-2.png")', backgroundSize: 'cover', backgroundPosition: 'center', backgroundRepeat: 'no-repeat' }}>
+    
+    <div className="flex flex-col items-center relative min-h-screen overflow-auto" style={{
+      backgroundImage: 'url("/pic/banner.jpg")', backgroundSize: 'cover',
+      backgroundPosition: 'center', backgroundRepeat: 'no-repeat', 
+    }}>
+  
       <Header />
-      <div className="-mt-20 mb-3">
+      <div className="-mt-20">
         <Couple />
       </div>
       <div>
@@ -23,7 +28,7 @@ function App() {
           { icon: 'logo/1.png', title: 'RSVP', url: '#' },
           { icon: 'logo/2.png', title: 'PRE-WEDDING FILM', url: '#' },
           { icon: 'logo/3.png', title: 'E-INVITE', url: '#' },
-          { icon: 'logo/4.png', title: 'COME FOR THE LOVE', url: '#' },
+          { icon: 'logo/4.png', title: 'COME FOR THE LOVE', url: 'https://maps.app.goo.gl/e44z82twTh1R3CG2A' },
           { icon: 'logo/5.png', title: 'WEDDING FAQs', url: '#' },
           { icon: 'logo/6.png', title: 'ATTIRE GUIDE', url: '#' },
         ]} />
@@ -33,7 +38,9 @@ function App() {
           <BGM src="/bgm.mp3" />
         </div>
       </div>
+    
       <div style={{ height: '225px' }}></div>
+      
     </div>
   );
 }

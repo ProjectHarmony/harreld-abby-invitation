@@ -2,16 +2,15 @@ import React, { useEffect, useRef, useState } from 'react';
 
 const BGM = ({ src }) => {
   const audioRef = useRef(null);
-  const [isMuted, setIsMuted] = useState(false);
+  const [isMuted, setIsMuted] = useState(true);
 
   useEffect(() => {
     const audio = audioRef.current;
-    audio.volume = isMuted ? 0 : 0.1; // Set the volume to 10% if not muted
+    audio.volume = isMuted ? 0 : 0.1;
 
     const playMusic = () => {
       if (!isMuted) {
         audio.play().catch(error => {
-          // Autoplay was prevented, possibly due to browser policy
           console.error('Autoplay was prevented:', error);
         });
       }
