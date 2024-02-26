@@ -1,28 +1,33 @@
 import React from 'react';
-import Couple from './sections/couple';
-import Header from './sections/header';
 import Hyperlinks from './sections/hyperlinks';
-import TimeCountdown from './sections/time-countdown';
+import TimeCountdown from './sections/countdown-timer';
 
 import BGM from './sections/bgm';
+import CountdownTimer from './sections/countdown-timer';
+import Header from './sections/header';
 
 function App() {
 
 
   return (
-    
+
     <div className="flex flex-col items-center relative min-h-screen overflow-auto" style={{
-      backgroundImage: 'url("/pic/banner.jpg")', backgroundSize: 'cover',
-      backgroundPosition: 'center', backgroundRepeat: 'no-repeat', 
+      backgroundColor: '#e89494', backgroundSize: 'cover',
+      backgroundPosition: 'center', backgroundRepeat: 'no-repeat',
     }}>
-  
-  <div className="mt-4 flex justify-between">
-      <Couple />
-      <Couple />
-      <Couple />
-    </div>
-      <div >
-        <TimeCountdown />
+
+      <Header />
+
+    
+      <p className='text-center northwave text-5xl mt-10 text-white'>
+        Harreld & Abegail
+      </p>
+      <p className='text-center tracking-wider mt-2 mb-1 northwave text-3xl text-white'>
+        Are getting married
+      </p>
+      <div className=''>
+
+        <CountdownTimer />
       </div>
       <div className='mt-10 w-full'>
         <Hyperlinks links={[
@@ -38,9 +43,9 @@ function App() {
           <BGM src="/bgm.mp3" />
         </div>
       </div>
-    
+
       <div style={{ height: '225px' }}></div>
-      
+
     </div>
   );
 }

@@ -3,16 +3,30 @@ import React from 'react';
 const Header = () => {
     return (
         <div className="relative w-full">
-            <div className="bg-black bg-opacity-30 absolute inset-0"></div>
-            <img
-                className="object-cover w-full h-64"
-                src='pic/couple.jpg'
-                alt="Banner"
-            />
-            <div className="absolute inset-0 flex flex-col justify-center items-center text-center z-20">
-
-                <h1 className="text-6xl font-bold text-white relative z-10 font-protest-riot northwave">Harreld & Abby</h1>
-                <p className="text-3xl text-white relative z-10 northwave">For Eternity</p>
+            <div className="object-cover w-full h[178px] bg-white">
+                <div className=" flex justify-between">
+                    <div className="h-40 w-32 mx-2   flex justify-center items-center overflow-hidden drop-shadow-lg shadow-sm mt-5">
+                        <img
+                            src='08.png'
+                            className='h-full w-full object-cover'
+                            alt="Couple Profile"
+                        />
+                    </div>
+                    <div className="h-40 w-32 mx-3 flex justify-center items-center overflow-hidden drop-shadow-lg shadow-sm mt-5">
+                        <img
+                            src='24.png'
+                            className='h-full w-full object-cover'
+                            alt="Couple Profile"
+                        />
+                    </div>
+                    <div className="h-40 w-32 mx-2 flex justify-center items-center overflow-hidden drop-shadow-lg shadow-sm mt-5">
+                        <img
+                            src='24.png'
+                            className='h-full w-full object-cover'
+                            alt="Couple Profile"
+                        />
+                    </div>
+                </div>
             </div>
         </div>
     );
