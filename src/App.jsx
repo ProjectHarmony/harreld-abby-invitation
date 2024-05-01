@@ -36,10 +36,9 @@ function App() {
         ]} />
       </div>
       <div className='mt-10 mb-12 fixed bottom-0 left-1/2 transform -translate-x-1/2 z-50 w-[80%]'>
-        <div>
-          <BGM src="/bgm.mp3" />
-        </div>
+        <BGM src="/bgm.mp3" />
       </div>
+    
     </div>
   );
 }
