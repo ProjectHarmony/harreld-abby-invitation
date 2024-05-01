@@ -32,7 +32,7 @@ const CountdownTimer = () => {
   };
 
   return (
-    <div className="border border-white p-4 rounded text-white">
+    <div className="border border-black p-4 rounded text-black font-bold">
       <div className="flex items-center justify-center space-x-4">
         <div className="flex flex-col items-center">
           <span className="text-3xl">{addLeadingZero(timeLeft.days)}</span>
