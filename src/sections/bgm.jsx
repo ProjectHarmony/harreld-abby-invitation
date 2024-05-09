@@ -3,6 +3,7 @@ import React, { useEffect, useRef, useState } from 'react';
 const BGM = ({ src }) => {
   const audioRef = useRef(null);
   const [isMuted, setIsMuted] = useState(true);
+  const [showAnimation, setShowAnimation] = useState(true);
 
   useEffect(() => {
     const audio = audioRef.current;
@@ -27,6 +28,14 @@ const BGM = ({ src }) => {
     };
   }, [src, isMuted]);
 
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setShowAnimation(false);
+    }, 5000);
+
+    return () => clearTimeout(timer);
+  }, []);
+
   const toggleMute = () => {
     setIsMuted(!isMuted);
   };
@@ -39,16 +48,61 @@ const BGM = ({ src }) => {
       </audio>
       <div
         style={{
+          display: 'flex',
+          alignItems: 'center',
           position: 'fixed',
           bottom: '40px',
-          right: '-20px',
-          opacity: '0.9',
+         
+          opacity: '1',
+          color: 'black',
         }}
       >
-        <button onClick={toggleMute}>{isMuted ? <img src='/logo/8.png' width={'50px'} height={'50px'}/> : <img src='/logo/7.png' width={'50px'} height={'50px'}/>}</button>
+        
+        <div style={{ marginLeft: '10px' }}>
+          <button onClick={toggleMute}>
+            {isMuted ? (
+              <img src="/logo/mute.png" width={'80px'} height={'80px'} />
+            ) : (
+              <img src="/logo/unmute.png" width={'80px'} height={'80px'} />
+            )}
+          </button>
+        </div>
+        <div>
+          {showAnimation && (
+            <TypewriterAnimation text="Click here for music" />
+          )}
+        </div>
       </div>
     </>
   );
+};
+
+const TypewriterAnimation = ({ text }) => {
+  const [typedText, setTypedText] = useState('');
+  const [currentIndex, setCurrentIndex] = useState(0);
+  const [isTyping, setIsTyping] = useState(true);
+
+  useEffect(() => {
+    const timer = setInterval(() => {
+      if (isTyping) {
+        setTypedText(text.substring(0, currentIndex + 1));
+        setCurrentIndex(currentIndex => currentIndex + 1);
+        if (currentIndex === text.length) {
+          setIsTyping(false);
+        }
+      } else {
+        setTypedText(text.substring(0, currentIndex - 1));
+        setCurrentIndex(currentIndex => currentIndex - 1);
+        if (currentIndex === 0) {
+          clearInterval(timer);
+        }
+      }
+    }, 100);
+
+    return () => clearInterval(timer);
+  }, [text, currentIndex, isTyping]);
+
+  return <span style={{ fontSize: '1.3rem', fontWeight: 'bold', color: '#362917' }}>{typedText}</span>;
 };
 
 export default BGM;

@@ -39,6 +39,7 @@ function App() {
           { title: 'WEDDING FAQs', url: WeddingFaqs, target: '_blank'  },
         ]} />
       </div>
+      <div className='w-8'></div>
       <div className='mt-10 mb-12 fixed bottom-0 left-1/2 transform -translate-x-1/2 z-50 w-[80%]'>
         <BGM src="/bgm.mp3" />
       </div>
