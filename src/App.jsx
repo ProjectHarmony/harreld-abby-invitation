@@ -3,6 +3,7 @@ import Hyperlinks from './sections/hyperlinks';
 import CountdownTimer from './sections/countdown-timer';
 import BGM from './sections/bgm';
 import InvitePdf from './invite.pdf';
+import WeddingFaqs from './weddingfaqs.pdf';
 
 
 
@@ -35,7 +36,7 @@ function App() {
           { title: 'E-INVITE', url: InvitePdf, target: '_blank' },
           { title: 'COME FOR THE LOVE', url: 'https://maps.app.goo.gl/NwWnYf3qVfduZc24A' },
           { title: 'RECEPTION VENUE', url: 'https://maps.app.goo.gl/wGoPDdoE3N8QkrPZ7' },
-          { title: 'WEDDING FAQs', url: 'https://www.canva.com/design/DAF9w8OvORA/oXbv2cPLEStLw9rBjNxXog/view?utm_content=DAF9w8OvORA&utm_campaign=designshare&utm_medium=link&utm_source=editor' },
+          { title: 'WEDDING FAQs', url: WeddingFaqs, target: '_blank'  },
         ]} />
       </div>
       <div className='mt-10 mb-12 fixed bottom-0 left-1/2 transform -translate-x-1/2 z-50 w-[80%]'>
