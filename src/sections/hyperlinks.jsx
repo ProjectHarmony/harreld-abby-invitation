@@ -5,8 +5,10 @@ const Hyperlinks = ({ links }) => {
         <div className='flex flex-col m-0 w-full border-t-1 border-b-1 px-5'>
             {links.map((link, index) => (
                 <a key={index} href={link.url} className="flex px-6 py-2 leading-6 
-        text-center text-[#362917] arimo uppercase transition rounded hover:shadow-lg 
-        hover:bg-[#818076] focus:outline-none items-center justify-center" style={{  fontSize: '1.6rem' }}>
+                    text-center text-[#362917] arimo uppercase transition rounded hover:shadow-lg 
+                    hover:bg-[#818076]  focus:outline-none items-center justify-center 
+                    w-full sm:w-auto"
+                    style={{ fontSize: '1.6rem' }}>
                     {link.title}
                 </a>
             ))}
@@ -15,4 +17,3 @@ const Hyperlinks = ({ links }) => {
 };
 
 export default Hyperlinks;
-    

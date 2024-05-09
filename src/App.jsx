@@ -23,16 +23,17 @@ function App() {
       </p>
 
       <div style={{ height: '3rem' }}></div>
-      <div className=''>
+      <div className='px-10'>
         <CountdownTimer />
       </div>
-      <div className='mt-10 w-full'>
+      <div className='mt-10 px-3'>
         <Hyperlinks links={[
           { title: 'RSVP', url: 'https://forms.gle/ANzMX3LEJFfmikWR7' },
-          { title: 'E-INVITE', url: 'https://www.canva.com/design/DAF8-pUHk_M/DMG30qGPFaPdTAphj1tQYQ/watch?utm_content=DAF8-pUHk_M&utm_campaign=designshare&utm_medium=link&utm_source=editor' },
+          { title: 'E-INVITE', url: 'https://www.canva.com/design/DAGEu_t6avY/usqEr6gRGJ-PH778qWUXgw/view?utm_content=DAGEu_t6avY&utm_campaign=designshare&utm_medium=link&utm_source=editor' },
           { title: 'COME FOR THE LOVE', url: 'https://maps.app.goo.gl/NwWnYf3qVfduZc24A' },
+          { title: 'RECEPTION VENUE', url: 'https://maps.app.goo.gl/wGoPDdoE3N8QkrPZ7' },
           { title: 'WEDDING FAQs', url: 'https://www.canva.com/design/DAF9w8OvORA/oXbv2cPLEStLw9rBjNxXog/view?utm_content=DAF9w8OvORA&utm_campaign=designshare&utm_medium=link&utm_source=editor' },
-          { title: 'ATTIRE GUIDE', url: '#' },
+          { title: 'ATTIRE GUIDE', url: 'https://www.canva.com/design/DAGEuzzC-yY/23WhEPKcEZX2rGVdBWgmHw/view?utm_content=DAGEuzzC-yY&utm_campaign=designshare&utm_medium=link&utm_source=editor' },
         ]} />
       </div>
       <div className='mt-10 mb-12 fixed bottom-0 left-1/2 transform -translate-x-1/2 z-50 w-[80%]'>

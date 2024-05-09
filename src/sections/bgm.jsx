@@ -42,7 +42,7 @@ const BGM = ({ src }) => {
           position: 'fixed',
           bottom: '40px',
           right: '-20px',
-          opacity: '0.5',
+          opacity: '0.9',
         }}
       >
         <button onClick={toggleMute}>{isMuted ? <img src='/logo/8.png' width={'50px'} height={'50px'}/> : <img src='/logo/7.png' width={'50px'} height={'50px'}/>}</button>
