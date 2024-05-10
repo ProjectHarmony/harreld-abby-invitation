@@ -51,7 +51,8 @@ const BGM = ({ src }) => {
           display: 'flex',
           alignItems: 'center',
           position: 'fixed',
-          bottom: '40px',
+          bottom: '-60px',
+          left: '-30px',
          
           opacity: '1',
           color: 'black',
@@ -61,9 +62,9 @@ const BGM = ({ src }) => {
         <div style={{ marginLeft: '10px' }}>
           <button onClick={toggleMute}>
             {isMuted ? (
-              <img src="/logo/mute.png" width={'80px'} height={'80px'} />
+              <img src="/logo/mute.png" width={'70px'} height={'70px'} />
             ) : (
-              <img src="/logo/unmute.png" width={'80px'} height={'80px'} />
+              <img src="/logo/unmute.png" width={'70px'} height={'70px'} />
             )}
           </button>
         </div>

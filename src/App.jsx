@@ -16,7 +16,7 @@ function App() {
       backgroundPosition: 'center',
       backgroundRepeat: 'no-repeat',
     }}>
-      <div style={{ height: '7rem' }}></div>
+      <div style={{ height: '5rem' }}></div>
 
       <p className='text-center greatvibes text-5xl mt-10 text-[#362917] font-extrabold '>
         Harreld & Abegail
@@ -39,8 +39,8 @@ function App() {
           { title: 'WEDDING FAQs', url: WeddingFaqs, target: '_blank'  },
         ]} />
       </div>
-      <div className='w-8'></div>
-      <div className='mt-10 mb-12 fixed bottom-0 left-1/2 transform -translate-x-1/2 z-50 w-[80%]'>
+      <div className='w-8 mb-10 h-5'></div>
+      <div className='mt-10 mb-12 fixed bottom-5 transform z-50 w-[80%]'>
         <BGM src="/bgm.mp3" />
       </div>
     
